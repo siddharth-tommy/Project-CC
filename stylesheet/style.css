@@ -92,8 +92,11 @@ body {
     width: 420px;
 }
 
-.centered-img-text {
-    color: whitesmoke;
+.project-one-txt {
+    color: white;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
     position: absolute;
     top: 50%;
     display: flex;
@@ -204,19 +207,23 @@ body {
 
 .progress-container {
     width: 100%;
-    height: 8px;
+    height: 5px;
     background: #050D16;
     border: 1px solid white;
 }
 
 .progress-bar {
-    height: 8px;
+    height: 5px;
     background: #0ff4ff;
     width: 0%;
 }
 
 /* pae-1-b */
 .page-two-caption {
+    color: black;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
     color: white;
     font-size: 50px;
     opacity: .7;
@@ -236,12 +243,18 @@ body {
     text-decoration: none;
     opacity: .5;
     cursor: pointer;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .centered-img-box-two ul li a.active,
 .centered-img-box-two ul li a:hover {
     color: white;
     opacity: 1;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 .centered-img-box-two ul {
@@ -261,7 +274,7 @@ body {
 
 .sticky-footer {
     position: fixed;
-    bottom: 3px;
+    bottom: 1px;
     background-color: white;
     width: 100%;
 }
@@ -387,7 +400,15 @@ body {
     color: grey;
     opacity: 1;
 }
-
+.know-more-text{
+    color: black;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: white;
+    font-size: 10px;
+    letter-spacing: 2.14px;
+    padding-bottom: 5px;
+}
 /* page 5 */
 .flex-container-five {
     height: 100vh;
@@ -481,7 +502,9 @@ label {
     padding-left: 10px;
     margin-right: 25px;
     vertical-align: middle;
-
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
 }
 
 ::placeholder {
@@ -536,7 +559,12 @@ label {
         margin-top: 100px;
     }
 }
-@media(min-width:1900px){
+@media(max-width:575px){
+.mobile-nav{
+    align-items: baseline;
+}
+}
+@media(max-width:1150px){
     .right-side-arc,
     .right-side-arc-page-one-b,
     .left-arc-pageOne-b,
@@ -546,7 +574,11 @@ label {
     .right-side-arc-pageFour,
     .left-arc-pageFour,
     .right-side-arc-pageFive,
-    .left-arc-pageFive,
+    .left-arc-pageFive{
+        display: none;
+    }
+}
+@media(min-width:1900px){
     .scroll-text,
     .play-btn-two,
     .click-more-txt {
@@ -585,8 +617,11 @@ label {
         position: relative;
         border: none;
     }
-    .centered-img-text {
-        color: whitesmoke;
+    .project-one-txt {
+        color: white;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
         position: absolute;
         top: 50%;
         display: flex;
@@ -599,6 +634,10 @@ label {
         justify-content: flex-start;
     }
     .page-two-caption{
+        color: black;
+        -webkit-text-fill-color: black;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: white;
         font-size: 30px;
         margin-top: 5vh;
     }
@@ -619,13 +658,13 @@ label {
     }
     .progress-container {
         width: 100%;
-        height: 12px;
+        height: 5px;
         background: #050D16;
         border: 1px solid white;
     }
     
     .progress-bar {
-        height: 12px;
+        height: 5px;
         background: #0ff4ff;
         width: 0%;
     }
