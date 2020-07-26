@@ -131,7 +131,8 @@ body {
     justify-content: center;
 }
 
-.play-btn, .play-btn-two{
+.play-btn,
+.play-btn-two {
     padding-left: 40px;
 }
 
@@ -209,12 +210,11 @@ body {
     width: 100%;
     height: 5px;
     background: #050D16;
-    border: 1px solid white;
 }
 
 .progress-bar {
     height: 5px;
-    background: #0ff4ff;
+    background-image: linear-gradient(#111, #0ff4ff, #111);
     width: 0%;
 }
 
@@ -400,15 +400,17 @@ body {
     color: grey;
     opacity: 1;
 }
-.know-more-text{
+
+.know-more-text {
     color: black;
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke-width: .5px;
-        -webkit-text-stroke-color: white;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: white;
     font-size: 10px;
     letter-spacing: 2.14px;
     padding-bottom: 5px;
 }
+
 /* page 5 */
 .flex-container-five {
     height: 100vh;
@@ -559,12 +561,15 @@ label {
         margin-top: 100px;
     }
 }
-@media(max-width:575px){
-.mobile-nav{
-    align-items: baseline;
+
+@media(max-width:575px) {
+    .mobile-nav {
+        align-items: baseline;
+    }
 }
-}
-@media(max-width:1150px){
+
+@media(max-width:1150px) {
+
     .right-side-arc,
     .right-side-arc-page-one-b,
     .left-arc-pageOne-b,
@@ -574,17 +579,20 @@ label {
     .right-side-arc-pageFour,
     .left-arc-pageFour,
     .right-side-arc-pageFive,
-    .left-arc-pageFive{
+    .left-arc-pageFive {
         display: none;
     }
 }
-@media(min-width:1900px){
+
+@media(min-width:1900px) {
+
     .scroll-text,
     .play-btn-two,
     .click-more-txt {
         display: none;
     }
 }
+
 @media(max-width:575px) {
     .mobile-nav {
         background: black
@@ -594,6 +602,7 @@ label {
         font-size: 33px;
         line-height: 45px;
     }
+
     .right-side-arc,
     .right-side-arc-page-one-b,
     .left-arc-pageOne-b,
@@ -609,6 +618,7 @@ label {
     .click-more-txt {
         display: none;
     }
+
     .centered-img-box {
         /* border: 1px solid #5d5d5d; */
         /* border-radius: 50%; */
@@ -617,6 +627,7 @@ label {
         position: relative;
         border: none;
     }
+
     .project-one-txt {
         color: white;
         -webkit-text-fill-color: black;
@@ -633,7 +644,8 @@ label {
         display: flex;
         justify-content: flex-start;
     }
-    .page-two-caption{
+
+    .page-two-caption {
         color: black;
         -webkit-text-fill-color: black;
         -webkit-text-stroke-width: 1px;
@@ -641,63 +653,70 @@ label {
         font-size: 30px;
         margin-top: 5vh;
     }
-    .centered-img-box-one-b, .centered-img-box-two{
+
+    .centered-img-box-one-b,
+    .centered-img-box-two {
         border: none !important;
     }
-    .project-one-b-img{
+
+    .project-one-b-img {
         width: 300px;
     }
-    .centered-img-box-three{
+
+    .centered-img-box-three {
         padding: 0;
     }
-    .internal-circle{
+
+    .internal-circle {
         padding: 135px;
     }
-    .flex-container-one{
+
+    .flex-container-one {
         height: 80vh;
     }
+
     .progress-container {
         width: 100%;
         height: 5px;
         background: #050D16;
-        border: 1px solid white;
     }
-    
+
     .progress-bar {
         height: 5px;
-        background: #0ff4ff;
+        background-image: linear-gradient(#111, #0ff4ff, #111);
         width: 0%;
     }
+
     ::placeholder {
         color: #1E252C;
         font-size: 35px;
-    }  
+    }
 }
 
 /* scroll css */
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background:transparent;
-  }
-   
-  ::-webkit-scrollbar-track:hover {
-    background:white;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #0FF4FF; 
-    border-radius: 15px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background:black;
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-track:hover {
+    background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: 2px solid #0FF4FF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #0FF4FF;
     border: 1px solid #0FF4FF;
-  }
+}
